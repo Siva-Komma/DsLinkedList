@@ -26,6 +26,7 @@ namespace LinkedList
             ds.Insert(2, 30);
             ds.Pop();
             ds.PopLastNode();
+            ds.Search(30);
             ds.Display();
             Console.ReadLine();
         }
