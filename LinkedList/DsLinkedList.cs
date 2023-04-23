@@ -75,6 +75,18 @@ namespace LinkedList
                 }
             }
         }
+        public void Pop()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("LinkedList is empty");
+            }
+            else
+            {
+                head = head.next;
+                Console.WriteLine("\nRemoved 1st node");
+            }
+        }
         public void Display()
         {
             if (head == null)
