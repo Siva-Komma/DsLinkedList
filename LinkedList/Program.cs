@@ -11,6 +11,11 @@ namespace LinkedList
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Data Structure Linked List");
+            DsLinkedList ds= new DsLinkedList();
+            ds.Add(56);
+            ds.Add(30);
+            ds.Add(70);
+            ds.Display();
             Console.ReadLine();
         }
     }
