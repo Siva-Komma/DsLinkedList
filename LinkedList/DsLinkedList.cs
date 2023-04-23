@@ -87,6 +87,27 @@ namespace LinkedList
                 Console.WriteLine("\nRemoved 1st node");
             }
         }
+        public void PopLastNode()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Linked List empty");
+            }
+            else
+            {
+                if (head.next == null)
+                    head = null;
+                else
+                {
+                    Node temp = head;
+                    while (temp.next.next != null)
+                    {
+                        temp = temp.next;
+                    }
+                    temp.next = null;
+                }
+            }
+        }
         public void Display()
         {
             if (head == null)
