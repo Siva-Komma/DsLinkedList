@@ -18,6 +18,9 @@ namespace LinkedList
             ds.AddFirst(70);
             ds.AddFirst(30);
             ds.AddFirst(56);
+            ds.Add(56);
+            ds.Add(70);
+            ds.Append(30);
             ds.Display();
             Console.ReadLine();
         }
