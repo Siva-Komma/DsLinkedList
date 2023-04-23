@@ -37,6 +37,44 @@ namespace LinkedList
         {
             AddFirst(data);
         }
+        public void Insert(int data, int position)
+        {
+            Node newNode = new Node(data);
+            newNode.data = data;
+            newNode.next = null;
+            if (position < 1)
+            {
+                Console.Write("\nposition should be greater than");
+            }
+            else if (position == 1)
+            {
+                newNode.next = head;
+                head = newNode;
+            }
+            else
+            {
+
+                Node temp = new Node(data);
+                temp = head;
+                for (int i = 1; i < position - 1; i++)
+                {
+                    if (temp != null)
+                    {
+                        temp = temp.next;
+                    }
+                }
+
+                if (temp != null)
+                {
+                    newNode.next = temp.next;
+                    temp.next = newNode;
+                }
+                else
+                {
+                    Console.Write("\nThe previous node is null.");
+                }
+            }
+        }
         public void Display()
         {
             if (head == null)

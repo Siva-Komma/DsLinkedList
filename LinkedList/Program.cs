@@ -21,6 +21,9 @@ namespace LinkedList
             ds.Add(56);
             ds.Add(70);
             ds.Append(30);
+            ds.Add(56);
+            ds.Add(70);
+            ds.Insert(2, 30);
             ds.Display();
             Console.ReadLine();
         }
